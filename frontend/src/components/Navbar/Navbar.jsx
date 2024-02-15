@@ -1,5 +1,6 @@
 import { IoMdSearch } from 'react-icons/io';
 import { FaShoppingCart } from 'react-icons/fa';
+import DarkMode from './DarkMode';
 
 const menuLinks = [
     {
@@ -72,7 +73,9 @@ const Navbar = () => {
                             </div>
                         </button>
 
-                        <div></div>
+                        <div>
+                            <DarkMode />
+                        </div>
                     </div>
                 </div>
             </div>
