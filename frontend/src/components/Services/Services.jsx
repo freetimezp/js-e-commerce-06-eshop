@@ -33,7 +33,7 @@ const Services = () => {
             <div className="container my-14 md:my-20">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8">
                     {servicesData.map((data) => (
-                        <div key={data.id} className="flex flex-col items-start sm:flex-row gap-4 py-2 
+                        <div key={data.id} className="flex flex-col items-start sm:flex-row gap-4 p-2 
                             shadow-2xl">
                             {data.icon}
                             <div>
