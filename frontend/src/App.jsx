@@ -9,6 +9,7 @@ import Products from "./components/Products/Products";
 import headphone from "./assets/hero/headphone.png";
 import smartwatch2 from "./assets/category/smartwatch2.png";
 import Blogs from "./components/Blogs/Blogs";
+import Partners from "./components/Partners/Partners";
 
 const BannerData = {
   discount: "30% OFF",
@@ -45,6 +46,7 @@ function App() {
       <Products />
       <Banner data={BannerData2} />
       <Blogs />
+      <Partners />
     </div>
   )
 }
