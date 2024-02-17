@@ -7,8 +7,13 @@ const ProductsList = ({ data }) => {
         <div className="mb-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 
                 place-items-center">
-                {data.map(product => (
-                    <div key={product.id} className="group duration-500 transition-all">
+                {data.map((product) => (
+                    <div
+                        key={product.id}
+                        className="group duration-500 transition-all"
+                        data-aos="fade-up"
+                        data-aos-delay={product.aosDelay}
+                    >
                         <div className="relative">
                             <img
                                 src={product.img} alt="product"

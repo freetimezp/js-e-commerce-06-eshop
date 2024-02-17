@@ -8,6 +8,15 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2e2e2e;
+}
+
 @layer components {
   .search-bar {
     @apply w-0 group-hover:w-[300px] transition-all duration-300 rounded-full group-hover:border

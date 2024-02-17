@@ -43,8 +43,13 @@ const Blogs = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6
                     gap-y-8 sm:gap-4 md:gap-7">
-                    {blogData.map((data) => (
-                        <div key={data.id} className="bg-white dark:bg-gray-800">
+                    {blogData.map((data, index) => (
+                        <div
+                            key={data.id}
+                            className="bg-white dark:bg-gray-800"
+                            data-aos="fade-up"
+                            data-aos-delay={index * 300}
+                        >
                             <div className="overflow-hidden rounded-2xl mb-2">
                                 <img
                                     src={data.image} alt="blog"
