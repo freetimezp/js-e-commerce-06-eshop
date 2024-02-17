@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { IoMdSearch } from 'react-icons/io';
 import { FaCaretDown, FaShoppingCart } from 'react-icons/fa';
 
@@ -42,9 +43,9 @@ const dropdownList = [
         name: 'Top Rated',
         link: '/#'
     },
-]
+];
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
     return (
         <div className="bg-white dark:bg-gray-900 dark:text-white duration-300
             relative z-40">
@@ -111,7 +112,7 @@ const Navbar = () => {
                                 duration-300' />
                         </div>
 
-                        <button className='relative p-3'>
+                        <button className='relative p-3' onClick={handleOrderPopup}>
                             <FaShoppingCart className='text-xl text-gray-600 dark:text-gray-400' />
                             <div className='w-4 h-4 bg-red-500 text-white rounded-full absolute
                                 top-0 right-0 flex justify-center items-center text-xs'>

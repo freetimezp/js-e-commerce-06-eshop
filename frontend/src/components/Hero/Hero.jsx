@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Slider from 'react-slick';
 
 import Image1 from '../../assets/hero/headphone.png';
@@ -29,7 +30,7 @@ const HeroData = [
     },
 ];
 
-const Hero = () => {
+const Hero = ({ handleOrderPopup }) => {
     const settings = {
         dots: false,
         arrows: false,
@@ -71,6 +72,7 @@ const Hero = () => {
                                                 text="Shop By Category"
                                                 bgColor="bg-primary"
                                                 textColor="text-white"
+                                                handler={handleOrderPopup}
                                             />
                                         </div>
                                     </div>

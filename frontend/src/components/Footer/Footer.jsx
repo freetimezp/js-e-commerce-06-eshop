@@ -13,7 +13,7 @@ const footerLinks = [
         link: "/#about"
     },
     {
-        id: 1,
+        id: 3,
         title: "Contact",
         link: "/#contact"
     },
